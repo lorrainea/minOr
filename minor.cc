@@ -300,7 +300,7 @@ INT mod_sampling( unsigned char * seq, INT * k_order, INT n, INT w, INT k, unord
 {
 	
 	INT * t_order = ( INT * ) malloc( ( n ) * sizeof( INT ) );
-	INT t = 2*k;
+	INT t = k/2;
 	
 	ordering_t( seq, w, t, n, t_order );
 	
